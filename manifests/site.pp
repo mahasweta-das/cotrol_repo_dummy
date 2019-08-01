@@ -1,3 +1,6 @@
+node 'master.puppet.vm'{
+  include role:master_server
+}
 node default { # shell based 
   file { '/root/README': #resource name
     ensure => file, # parameter 
