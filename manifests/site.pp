@@ -5,7 +5,7 @@ node default { # shell based
 #    owner   => 'root', #last should also have comma at the end
   }
 node 'docker.puppet.vm' {
-  include role::minecraft_server
+  include role::docker_server
 }  
 node 'minetest.puppet.vm' {
   include role::minecraft_server
