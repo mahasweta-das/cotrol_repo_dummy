@@ -4,6 +4,9 @@ node default { # shell based
 #    content => 'This is a readme',
 #    owner   => 'root', #last should also have comma at the end
   }
+node 'docker.puppet.vm' {
+  include role::minecraft_server
+}  
 node 'minetest.puppet.vm' {
   include role::minecraft_server
 }
